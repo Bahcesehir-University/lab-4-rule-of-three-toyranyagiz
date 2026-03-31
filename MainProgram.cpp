@@ -67,7 +67,7 @@ public:
         //   2. Calculate length of input using strlen()
         m_length = strlen(input);
         //   3. Allocate m_data with new char[m_length + 1]
-        m_data = new char[m_length + 1] ;
+        m_data = new char[m_length + 1];
         //   4. Copy input into m_data using strcpy()
         strcpy(m_data,input);
         
@@ -96,7 +96,7 @@ public:
     DynamicBuffer(const DynamicBuffer& other) {
         // TODO: Implement copy constructor
         //   1. Increment g_copyConstructorCount
-        g_destructorCount++;
+        g_copyConstructorCount++;
         //   2. Copy m_length from other
         m_length = other.m_length;
         //   3. Allocate new memory: new char[m_length + 1]
